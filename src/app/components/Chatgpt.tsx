@@ -8,13 +8,15 @@ export default function Chatgpt() {
           <img
             className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
             alt="hero"
-            src="images/p4.jpg"
+            src="images/p1.jpg"
           />
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               AI ChatBot
             </h1>
-            <p className="mb-8 leading-relaxed">AI ChatBot ด้านรัฐธรรมนูญไทย </p>
+            <p className="mb-8 leading-relaxed">
+              AI ChatBot ด้านรัฐธรรมนูญไทย{" "}
+            </p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 ดูรายละเอียดที่นี่
