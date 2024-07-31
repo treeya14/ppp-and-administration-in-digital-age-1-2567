@@ -1,10 +1,10 @@
 import React from "react";
-import AECRanking from "../components/AECRanking";
+import ProductsList from "@/components/ProductList";
 
 export default function page() {
   return (
     <div>
-      <AECRanking />
+      <ProductsList />
     </div>
   );
 }
