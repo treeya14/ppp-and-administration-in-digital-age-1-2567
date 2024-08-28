@@ -8,12 +8,12 @@ export async function PUT(request, { params }) {
   const {
     newName: name,
     newProject: project,
-    newImplentation: implentation,
+    newImplentation: implementation,
     newEmail: email,
     newMobile: mobile,
     newBudget: budget,
     newYear: year,
-    newEvaluationl: evaluationl,
+    newEvaluationl: evaluation,
     newWeak: weak,
     newStrength: strength,
     newDevelopment: development,
@@ -23,7 +23,7 @@ export async function PUT(request, { params }) {
   await Product.findByIdAndUpdate(id, {
     name,
     project,
-    implentation,
+    implementation,
     email,
     mobile,
     budget,

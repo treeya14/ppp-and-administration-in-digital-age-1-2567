@@ -282,7 +282,7 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setฆuggestion(e.target.value)}
+          onChange={(e) => setSuggestion(e.target.value)}
           value={suggestion}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"

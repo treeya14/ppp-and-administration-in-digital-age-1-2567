@@ -5,7 +5,7 @@ const topicSchema = new Schema(
   {
     name: { type: String, required: true },
     image: { type: String, required: true },
-    implement: { type: String, required: true },
+    implementation: { type: String, required: true },
     email : { type: String, required: true },
     mobile : { type: String, required: true },
     budget : { type: Number, required: true },

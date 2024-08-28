@@ -84,7 +84,7 @@ export default async function ProductsList() {
                     </div>
                   </div>
                 </td>
-                <td>{element.implentation}</td>
+                <td>{element.implementation}</td>
                 <td>{element.email}</td>
                 <td>{element.mobile}</td>
                 <td>{element.budget}</td>

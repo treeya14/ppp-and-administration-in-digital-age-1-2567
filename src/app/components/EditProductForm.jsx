@@ -21,7 +21,7 @@ export default function EditProductForm({
 }) {
   const [newName, setNewTitle] = useState(name);
   const [newProject, setNewProject] = useState(project);
-  const [newImplentation, setNewImplentation] = useState(implementation);
+  const [newImplentation, setNewImplementation] = useState(implementation);
   const [newEmail, setNewEmail] = useState(email);
   const [newMobile, setNewMobile] = useState(mobile);
   const [newBudget, setNewBudget] = useState(budget);
@@ -46,7 +46,7 @@ export default function EditProductForm({
         body: JSON.stringify({
           newName,
           newProject,
-          newImplentation,
+          newImplementation,
           newEmail,
           newMobile,
           newBudget,
@@ -76,6 +76,24 @@ export default function EditProductForm({
         <h1 className="font-bold py-10 text-2xl">Update Product</h1>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+      <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-10 ml-24">
+  <div className="sm:col-span-3">
+    <label
+      htmlFor="first-name"
+      className="block text-sm font-medium leading-6 text-gray-900"
+    >
+      ยุทธศาสตร์ชาติ
+    </label>
+    <div className="mt-2">
+    <input
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+          className="input input-bordered input-accent w-full max-w-xs"
+          type="text"
+          placeholder="ยุทธศาสตร์ชาติ"
+        />
+    </div>
+  </div>
         <input
           onChange={(e) => setNewTitle(e.target.value)}
           value={newName}
@@ -90,8 +108,8 @@ export default function EditProductForm({
           type="text"
         />
         <input
-          onChange={(e) => setNewImplentation(e.target.value)}
-          value={newImplentation}
+          onChange={(e) => setNewImplementation(e.target.value)}
+          value={newImplementation}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
         />
@@ -153,6 +171,7 @@ export default function EditProductForm({
         <button className="btn btn-primary w-full max-w-xs">
           Update Product
         </button>
+        </div>
       </form>
     </>
   );

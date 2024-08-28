@@ -40,7 +40,7 @@ export default async function EditProduct({ params }) {
       id={id}
       name={name}
       project={project}
-      implentation={implentation}
+      implementation={implentation}
       email={email}
       mobile={mobile}
       budget={budget}
