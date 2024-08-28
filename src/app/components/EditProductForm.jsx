@@ -21,7 +21,7 @@ export default function EditProductForm({
 }) {
   const [newName, setNewTitle] = useState(name);
   const [newProject, setNewProject] = useState(project);
-  const [newImplentation, setNewImplementation] = useState(implementation);
+  const [newImplementation, setNewImplementation] = useState(implementation);
   const [newEmail, setNewEmail] = useState(email);
   const [newMobile, setNewMobile] = useState(mobile);
   const [newBudget, setNewBudget] = useState(budget);
@@ -94,12 +94,19 @@ export default function EditProductForm({
         />
     </div>
   </div>
+
+{/* โครงการ
+</label>
+    <div className="mt-2"> */}
         <input
           onChange={(e) => setNewTitle(e.target.value)}
           value={newName}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
         />
+         {/* </div>
+  </div> */}
+
 
         <input
           onChange={(e) => setNewProject(e.target.value)}
