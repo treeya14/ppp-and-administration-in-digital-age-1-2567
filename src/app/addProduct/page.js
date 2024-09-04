@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 export default function AddProduct() {
   const [name, setName] = useState("");
   const [project, setProject] = useState("");
-  const [implentation, setImplentation] = useState("");
+  const [implementation, setImplementation] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [budget, setBudget] = useState("");
@@ -37,7 +37,7 @@ export default function AddProduct() {
         body: JSON.stringify({ 
         name,
         project,
-        implentation,
+        implementation,
         email,
         mobile,
         budget,
@@ -98,8 +98,8 @@ export default function AddProduct() {
           value={project}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="/images/1.jpg"
-          defaultValue="/images/1.jpg"
+          placeholder="โครงการ"
+          // defaultValue="/images/1.jpg"
         />
     </div>
   </div>
@@ -112,8 +112,8 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setImplentation(e.target.value)}
-          value={implentation}
+          onChange={(e) => setImplementation(e.target.value)}
+          value={implementation}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
           placeholder="หน่วยงานที่นำนโยบายไปปฏิบัติ"
@@ -200,7 +200,7 @@ export default function AddProduct() {
           onChange={(e) => setEvaluation(e.target.value)}
           value={evaluation}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="float"
+          type="number"
           placeholder="ผลการประเมิน"
         />
     </div>
@@ -256,23 +256,6 @@ export default function AddProduct() {
         />
     </div>
   </div>
-  {/* <div className="sm:col-span-3">
-    <label
-      htmlFor="last-name"
-      className="block text-sm font-medium leading-6 text-gray-900"
-    >
-      ข้อที่ควรปรับปรุง (จุดอ่อน)
-    </label>
-    <div className="mt-2">
-    <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
-          className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
-          placeholder="Product Category"
-        />
-    </div>
-  </div> */}
   <div className="sm:col-span-3">
     <label
       htmlFor="last-name"
@@ -295,7 +278,7 @@ export default function AddProduct() {
     <div ClassName="flex justify-center items-center mt-10">
         <button 
         type="submit" 
-        className="btn btn-primary w-full max-w-xs ml-24 flex justify-center items-center">
+        className="btn btn-primary w-full max-w-xs ml-24">
           
           Add Product
         </button>

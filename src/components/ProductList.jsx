@@ -1,4 +1,4 @@
-//components\EditProductForm.jsx
+///components\EditProductForm.jsx
 import Link from "next/link";
 import RemoveBtn from "./RemoveBtn";
 import Image from "next/image";
@@ -43,9 +43,18 @@ export default async function ProductsList() {
                   <input type="checkbox" className="checkbox" />
                 </label>
               </th>
-              <th>Name</th>
-              <th>Price</th>
-              <th>Category</th>
+              <th>ยุทธศาสตร์ชาติ</th>
+              <th>โครงการ</th>
+              <th>หน่วยงานที่นำนโยบายไปปฏิบัติ</th>
+              <th>อีเมล</th>
+              <th>โทรศัพท์</th>
+              <th>งบประมาณ (ล้านบาท)</th>
+              <th>ปีงบประมาณ</th>
+              <th>ผลประเมิน</th>
+              <th>จุดอ่อน</th>
+              <th>จุดแข็ง</th>
+              <th>แนวทางเสริมจุดแข็ง</th>
+              <th>ข้อเสนอแนะ</th>
               <th>Edit & Delete</th>
             </tr>
           </thead>
@@ -57,12 +66,12 @@ export default async function ProductsList() {
                     <input type="checkbox" className="checkbox" />
                   </label>
                 </th>
-                <td>
+                {/* <td>
                   <div className="flex items-center gap-3">
                     <div className="avatar">
                       <div className="mask mask-squircle w-12 h-12">
                         <Image
-                          src={element.image}
+                          src={element.project}
                           alt={element.name}
                           width={80}
                           height={80}
@@ -74,9 +83,20 @@ export default async function ProductsList() {
                       <div className="font-bold">{element.name}</div>
                     </div>
                   </div>
-                </td>
-                <td>฿{element.price}</td>
-                <td>{element.category}</td>
+                </td> */}
+                <td>{element.name}</td>
+                <td>{element.project}</td>
+                <td>{element.implementation}</td>
+                <td>{element.email}</td>
+                <td>{element.mobile}</td>
+                <td>{element.budget}</td>
+                <td>{element.year}</td>
+                <td>{element.evaluation}</td>
+                <td>{element.weak}</td>
+                <td>{element.strength}</td>
+                <td>{element.development}</td>
+                <td>{element.suggestion}</td>
+                {/* <td></td> */}
                 <th>
                   <Link href={`/editProduct/${element._id}`}>
                     <button className="btn btn-primary">Edit</button>
