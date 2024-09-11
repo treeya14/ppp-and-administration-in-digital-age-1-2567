@@ -24,7 +24,7 @@ export default function AddProduct() {
     e.preventDefault();
 
     if (!name || !project) {
-      alert("Name and image are required.");
+      alert("Name and project are required.");
       return;
     }
 
@@ -75,7 +75,7 @@ export default function AddProduct() {
     >
       ยุทธศาสตร์ชาติ
     </label>
-    <div className="mt-2">
+    {/* <div className="mt-2">
     <input
           onChange={(e) => setName(e.target.value)}
           value={name}
@@ -83,7 +83,30 @@ export default function AddProduct() {
           type="text"
           placeholder="ยุทธศาสตร์ชาติ"
         />
-    </div>
+    </div> */}
+<div className="mt-2">
+    <select className="input input-bordered input-accent w-full max-w-xs"
+    onChange={(e) => setName(e.target.value)}
+    value={name}
+    type="text"
+    placeholder="ยุทธศาสตร์ชาติ"
+    >
+  <option disabled selected>ดัชนีแผนแม่บทด้านความมั่นคง</option>
+  <option>ดัชนีสันติภาพโลก</option>
+  <option>ดัชนีความสุขโลก</option>
+  <option>ดัชนีสิทธิมนุษยชนและหลักนิติธรม</option>
+  <option>ดัชนีสถาบันหลัก</option>
+  <option>ดัชนีเสถียรภาพทางการเมือง</option>
+  <option>ดัชนีการมีสิทธิ์มีเสียงของประชาชนและการรับผิดชอบ</option>
+  <option>ดัชนีปลอดภัยจากภัยคุกคาม</option>
+  <option>ดัชนีความสงบสุขภาคใต้</option>
+  <option>ดัชนีประสิทธิภาพของหน่วยงานด้านการข่าวและประชาคมข่าวกรอง</option>
+  <option>ดัชนีความแข็งแกร่งทางกำลังทหาร</option>
+  <option>ดัชนีรัฐเปราะบาง</option>
+  <option>ดัชนีจำนวนเป้าหมายย่อยของเป้าหมายการพัฒนาที่ยั่งยืน ในเป้าหมายที่ 17 บรรลุตามที่กำหนด</option>
+  <option>ดัชนีระดับประสิทธิภาพการดำเนินงานของหน่วยงานด้านการจัดการความมั่นคง</option>
+</select>
+</div>
   </div>
   <div className="sm:col-span-3">
     <label
@@ -213,7 +236,7 @@ export default function AddProduct() {
       จุดอ่อน
     </label>
     <div className="mt-2">
-    <input
+    <textarea
           onChange={(e) => setWeak(e.target.value)}
           value={weak}
           className="input input-bordered input-accent w-full max-w-xs"
@@ -230,7 +253,7 @@ export default function AddProduct() {
       จุดแข็ง
     </label>
     <div className="mt-2">
-    <input
+    <textarea
           onChange={(e) => setStrength(e.target.value)}
           value={strength}
           className="input input-bordered input-accent w-full max-w-xs"
@@ -247,7 +270,7 @@ export default function AddProduct() {
       แนวทางเสริม (จุดแข็ง)
     </label>
     <div className="mt-2">
-    <input
+    <textarea
           onChange={(e) => setDevelopment(e.target.value)}
           value={development}
           className="input input-bordered input-accent w-full max-w-xs"
@@ -264,7 +287,7 @@ export default function AddProduct() {
       ข้อเสนอแนะ
     </label>
     <div className="mt-2">
-    <input
+    <textarea
           onChange={(e) => setSuggestion(e.target.value)}
           value={suggestion}
           className="input input-bordered input-accent w-full max-w-xs"
